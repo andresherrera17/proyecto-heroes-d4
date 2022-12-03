@@ -15,4 +15,9 @@ export class EjemplosPipesComponent {
 
   idiomaFr:string = 'fr';
   idiomaEs:string = 'es';
+
+  generarAlerta(num:number,nombre:string,nombreDos:string){
+    this.nombre = 'Tomas Benavides';
+    console.log(num,nombre,nombreDos)
+  }
 }

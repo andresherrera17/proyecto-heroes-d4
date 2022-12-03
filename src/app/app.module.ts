@@ -9,6 +9,7 @@ import { NavbarComponent } from './compartida/navbar/navbar.component';
 import { EjemplosPipesComponent } from './components/ejemplos-pipes/ejemplos-pipes.component';
 
 import localEs from "@angular/common/locales/es";
+import { MayusculaPipe } from './pipes/mayuscula.pipe';
 registerLocaleData(localEs, 'es');
 
 @NgModule({
@@ -16,7 +17,8 @@ registerLocaleData(localEs, 'es');
   declarations: [
     AppComponent,
     NavbarComponent,
-    EjemplosPipesComponent
+    EjemplosPipesComponent,
+    MayusculaPipe
   ],
   //Todas las librerias que utilicemos
   imports: [

@@ -78,9 +78,50 @@
         <tr>
           <td>{{ nombre }}</td>
           <td>mi pipe mayuscula</td>
-          <td>{{ nombre | mayuscula }}</td>
+          <td>{{ nombre | mayuscula: "Bienvenido":"a nuestra pagina" }}</td>
+        </tr>
+        <tr>
+          <td>{{ nombre }}</td>
+          <td>Boton</td>
+          <td>
+            <button
+              class="btn btn-info"
+              (click)="generarAlerta(2, 'Andres', nombre)"
+            >
+              Alerta
+            </button>
+
+            <select
+              class="form-control"
+              (change)="generarAlerta(2, 'Andres', nombre)"
+            >
+              <option>Seleccinar</option>
+              <option>Opcion 1</option>
+              <option>Opcion 2</option>
+              <option>Opcion 3</option>
+            </select>
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
+
+<!-- Ejecicio
+Van a crear un pipe que se llame capitalizar va ha recibir un nombre y va a tener un parametro
+que sea number 
+
+parametro va a recibir
+1 -> volver todo en mayuscula
+2 -> todo en minuscula
+3 -> 'andRes HerReRa' -> Andres Herrera -> capitalizar -->
+
+<!-- Ejercicio 2
+Se van a crear un pipe ActivarContrasena 
+
+variable = 'Andres Herrera'
+
+Activo = 'Andres Herrera'
+Desactivo = '****** *******'
+
+boton activar y desactivar -> variable que maneje ese estado ('true','false') -->

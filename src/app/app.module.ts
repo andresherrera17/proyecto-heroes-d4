@@ -10,6 +10,8 @@ import { EjemplosPipesComponent } from './components/ejemplos-pipes/ejemplos-pip
 
 import localEs from "@angular/common/locales/es";
 import { MayusculaPipe } from './pipes/mayuscula.pipe';
+import { LoginComponent } from './components/login/login.component';
+import { RouterModule } from '@angular/router';
 registerLocaleData(localEs, 'es');
 
 @NgModule({
@@ -18,12 +20,14 @@ registerLocaleData(localEs, 'es');
     AppComponent,
     NavbarComponent,
     EjemplosPipesComponent,
-    MayusculaPipe
+    MayusculaPipe,
+    LoginComponent
   ],
   //Todas las librerias que utilicemos
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   //Servicios - relacionados con el backend
   providers: [

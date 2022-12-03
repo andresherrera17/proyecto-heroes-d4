@@ -16,6 +16,21 @@ export class EjemplosPipesComponent {
   idiomaFr:string = 'fr';
   idiomaEs:string = 'es';
 
+  valorPromesa = new Promise<string>((resolve) => {
+    setTimeout(() => {
+      resolve('llego la informacion')
+    }, 5000);
+  });
+
+  heroe = {
+    nombre:'logan',
+    edad:1000,
+    otrosNombre: {
+      nombre1: 'wolverine',
+      nombre2: 'lobo'
+    }
+  }
+
   generarAlerta(num:number,nombre:string,nombreDos:string){
     this.nombre = 'Tomas Benavides';
     console.log(num,nombre,nombreDos)

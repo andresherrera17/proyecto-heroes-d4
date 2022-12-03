@@ -102,6 +102,20 @@
             </select>
           </td>
         </tr>
+        <tr>
+          <td>{{ valorPromesa }}</td>
+          <td>Promesas</td>
+          <td>{{ valorPromesa | async }}</td>
+        </tr>
+        <tr>
+          <td>{{ heroe }}</td>
+          <td>Objeto</td>
+          <td>
+            <pre>
+              {{ heroe | json }}
+            </pre>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>

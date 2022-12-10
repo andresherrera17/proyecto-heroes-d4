@@ -12,6 +12,8 @@ import localEs from "@angular/common/locales/es";
 import { MayusculaPipe } from './pipes/mayuscula.pipe';
 import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
+import { FormularioNgmodelComponent } from './components/formularios/formulario-ngmodel/formulario-ngmodel.component';
+import { FormularioReactivosComponent } from './components/formularios/formulario-reactivos/formulario-reactivos.component';
 registerLocaleData(localEs, 'es');
 
 @NgModule({
@@ -21,7 +23,9 @@ registerLocaleData(localEs, 'es');
     NavbarComponent,
     EjemplosPipesComponent,
     MayusculaPipe,
-    LoginComponent
+    LoginComponent,
+    FormularioNgmodelComponent,
+    FormularioReactivosComponent
   ],
   //Todas las librerias que utilicemos
   imports: [

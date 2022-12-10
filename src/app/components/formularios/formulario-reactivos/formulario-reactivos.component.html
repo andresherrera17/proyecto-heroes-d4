@@ -1,16 +1,15 @@
 <h4>Formulario Reactivos</h4>
 <hr />
 
-<form (ngSubmit)="guardar()">
+<form [formGroup]="formGroup" (ngSubmit)="guardar()">
   <div class="mb-3">
     <label for="formGroupExampleInput" class="form-label">Nombre</label>
     <input
       type="text"
       class="form-control"
       name="nombre"
+      formControlName="nombre"
       placeholder="Nombre"
-      minlength="5"
-      required
     />
   </div>
   <div class="mb-3">
@@ -19,6 +18,7 @@
       type="text"
       class="form-control"
       name="apellido"
+      formControlName="apellido"
       placeholder="Apellido"
     />
   </div>
@@ -28,6 +28,7 @@
       type="email"
       class="form-control"
       name="correo"
+      formControlName="correo"
       placeholder="Escriba su correo"
     />
   </div>
@@ -38,6 +39,7 @@
       type="password"
       class="form-control"
       name="contrasena"
+      formControlName="contrasena"
       placeholder="Escriba su contraseña"
     />
   </div>

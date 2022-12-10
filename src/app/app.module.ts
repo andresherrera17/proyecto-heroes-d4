@@ -1,20 +1,24 @@
 import { registerLocaleData } from '@angular/common';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import localEs from "@angular/common/locales/es";
+import { RouterModule } from '@angular/router';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
-
+//archivo rutas
 import { AppRoutingModule } from './app-routing.module';
+
+//components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './compartida/navbar/navbar.component';
 import { EjemplosPipesComponent } from './components/ejemplos-pipes/ejemplos-pipes.component';
-
-import localEs from "@angular/common/locales/es";
-import { MayusculaPipe } from './pipes/mayuscula.pipe';
 import { LoginComponent } from './components/login/login.component';
-import { RouterModule } from '@angular/router';
 import { FormularioNgmodelComponent } from './components/formularios/formulario-ngmodel/formulario-ngmodel.component';
 import { FormularioReactivosComponent } from './components/formularios/formulario-reactivos/formulario-reactivos.component';
-import { FormsModule } from '@angular/forms';
+
+//pipes
+import { MayusculaPipe } from './pipes/mayuscula.pipe';
+
 registerLocaleData(localEs, 'es');
 
 @NgModule({
@@ -33,7 +37,8 @@ registerLocaleData(localEs, 'es');
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   //Servicios - relacionados con el backend
   providers: [

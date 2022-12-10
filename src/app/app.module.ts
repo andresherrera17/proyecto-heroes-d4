@@ -14,6 +14,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { FormularioNgmodelComponent } from './components/formularios/formulario-ngmodel/formulario-ngmodel.component';
 import { FormularioReactivosComponent } from './components/formularios/formulario-reactivos/formulario-reactivos.component';
+import { FormsModule } from '@angular/forms';
 registerLocaleData(localEs, 'es');
 
 @NgModule({
@@ -31,7 +32,8 @@ registerLocaleData(localEs, 'es');
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   //Servicios - relacionados con el backend
   providers: [

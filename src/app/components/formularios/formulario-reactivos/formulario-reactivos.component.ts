@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FormularioReactivosComponent {
 
+  constructor(){
+
+  }
+
+  guardar(){
+    
+  }
 }

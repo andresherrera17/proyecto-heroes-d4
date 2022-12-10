@@ -1,1 +1,45 @@
-<p>formulario-reactivos works!</p>
+<h4>Formulario Reactivos</h4>
+<hr />
+
+<form (ngSubmit)="guardar()">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      name="nombre"
+      placeholder="Nombre"
+      minlength="5"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Apellido</label>
+    <input
+      type="text"
+      class="form-control"
+      name="apellido"
+      placeholder="Apellido"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Correo</label>
+    <input
+      type="email"
+      class="form-control"
+      name="correo"
+      placeholder="Escriba su correo"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
+    <input
+      type="password"
+      class="form-control"
+      name="contrasena"
+      placeholder="Escriba su contraseña"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

@@ -46,8 +46,25 @@ export class FormularioReactivosComponent implements OnInit, OnDestroy{
     return error;
   }
 
+  get usuarioNoValido(){
+    return this.nombre?.invalid && this.nombre.touched
+  }
+
+  getError(controlName: string){
+    let error = '';
+    const control = this.formGroup.get(controlName);
+    if(control?.touched && control?.errors != null ){
+      error = JSON.stringify(control?.errors)
+    }
+    return error;
+  }
+
 
   guardar(){
     console.log(this.formGroup);
   }
+
+  get nombre(): AbstractControl | null { return this.formGroup.get('nombre') };
+  get apellido(): AbstractControl | null { return this.formGroup.get('apellido') };
+  get contrasena(): AbstractControl | null { return this.formGroup.get('contrasena') };
 }

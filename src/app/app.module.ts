@@ -13,8 +13,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './compartida/navbar/navbar.component';
 import { EjemplosPipesComponent } from './components/ejemplos-pipes/ejemplos-pipes.component';
 import { LoginComponent } from './components/login/login.component';
-import { FormularioNgmodelComponent } from './components/formularios/formulario-ngmodel/formulario-ngmodel.component';
-import { FormularioReactivosComponent } from './components/formularios/formulario-reactivos/formulario-reactivos.component';
 
 //pipes
 import { MayusculaPipe } from './pipes/mayuscula.pipe';

@@ -3,7 +3,7 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import localEs from "@angular/common/locales/es";
 import { RouterModule } from '@angular/router';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+
 
 //archivo rutas
 import { AppRoutingModule } from './app-routing.module';
@@ -28,17 +28,13 @@ registerLocaleData(localEs, 'es');
     NavbarComponent,
     EjemplosPipesComponent,
     MayusculaPipe,
-    LoginComponent,
-    FormularioNgmodelComponent,
-    FormularioReactivosComponent
+    LoginComponent
   ],
   //Todas las librerias que utilicemos
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule,
-    FormsModule,
-    ReactiveFormsModule
+    RouterModule
   ],
   //Servicios - relacionados con el backend
   providers: [

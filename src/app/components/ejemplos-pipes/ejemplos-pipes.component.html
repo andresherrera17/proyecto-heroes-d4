@@ -23,17 +23,17 @@
         <tr>
           <td>{{ nombre }}</td>
           <td>slice</td>
-          <td>{{ nombre | slice: 2 }}</td>
+          <td>{{ nombre | slice : 2 }}</td>
         </tr>
         <tr>
           <td>{{ PI }}</td>
           <td>number</td>
-          <td>{{ PI | number: "1.0-2" }}</td>
+          <td>{{ PI | number : "1.0-2" }}</td>
         </tr>
         <tr>
           <td>{{ PI }}</td>
           <td>number</td>
-          <td>{{ PI | number: "2.0-3" }}</td>
+          <td>{{ PI | number : "2.0-3" }}</td>
         </tr>
         <tr>
           <td>{{ porcentaje }}</td>
@@ -48,12 +48,12 @@
         <tr>
           <td>{{ salario }}</td>
           <td>currency</td>
-          <td>{{ salario | currency: "EUR" }}</td>
+          <td>{{ salario | currency : "EUR" }}</td>
         </tr>
         <tr>
           <td>{{ salario }}</td>
           <td>currency</td>
-          <td>{{ salario | currency: "EUR" }}</td>
+          <td>{{ salario | currency : "EUR" }}</td>
         </tr>
         <tr>
           <td>{{ fecha }}</td>
@@ -63,22 +63,22 @@
         <tr>
           <td>{{ fecha }}</td>
           <td>date:'short'</td>
-          <td>{{ fecha | date: "medium" }}</td>
+          <td>{{ fecha | date : "medium" }}</td>
         </tr>
         <tr>
           <td>{{ fecha }}</td>
           <td>date:'short'</td>
-          <td>{{ fecha | date: "MMMM-dd-yyyy" }}</td>
+          <td>{{ fecha | date : "MMMM-dd-yyyy" }}</td>
         </tr>
         <tr>
           <td>{{ fecha }}</td>
           <td>date:'short'</td>
-          <td>{{ fecha | date: "MMMM-dd-yyyy" }}</td>
+          <td>{{ fecha | date : "MMMM-dd-yyyy" }}</td>
         </tr>
         <tr>
           <td>{{ nombre }}</td>
           <td>mi pipe mayuscula</td>
-          <td>{{ nombre | mayuscula: "Bienvenido":"a nuestra pagina" }}</td>
+          <td>{{ nombre | mayuscula : "Bienvenido" : "a nuestra pagina" }}</td>
         </tr>
         <tr>
           <td>{{ nombre }}</td>
@@ -115,6 +115,17 @@
               {{ heroe | json }}
             </pre>
           </td>
+        </tr>
+        <tr>
+          <iframe
+            width="560"
+            height="315"
+            [src]="video | domSeguro"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </tr>
       </tbody>
     </table>

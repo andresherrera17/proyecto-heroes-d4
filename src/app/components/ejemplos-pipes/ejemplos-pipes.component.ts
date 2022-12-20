@@ -15,6 +15,7 @@ export class EjemplosPipesComponent {
 
   idiomaFr:string = 'fr';
   idiomaEs:string = 'es';
+  video: string = 'https://www.youtube.com/embed/Lz47kWa-ORQ'
 
   valorPromesa = new Promise<string>((resolve) => {
     setTimeout(() => {

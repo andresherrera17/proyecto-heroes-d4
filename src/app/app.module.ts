@@ -16,6 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 
 //pipes
 import { MayusculaPipe } from './pipes/mayuscula.pipe';
+import { DomSeguroPipe } from './pipes/dom-seguro.pipe';
 
 registerLocaleData(localEs, 'es');
 
@@ -26,7 +27,8 @@ registerLocaleData(localEs, 'es');
     NavbarComponent,
     EjemplosPipesComponent,
     MayusculaPipe,
-    LoginComponent
+    LoginComponent,
+    DomSeguroPipe
   ],
   //Todas las librerias que utilicemos
   imports: [

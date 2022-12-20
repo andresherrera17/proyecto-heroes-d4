@@ -10,13 +10,14 @@ import { LoginService } from 'src/app/services/login.service';
 export class LoginComponent {
 
   count:number = 0;
+  
+  contador:number = 0;
 
   constructor(private _serviceLogin:LoginService ){
 
   }
 
   login(){
-
     let persona:IPersona = {
       nombre: 'Andres Herrera',
       correo: 'andresherrerab97@gmail.com',
@@ -24,6 +25,13 @@ export class LoginComponent {
     }
     this.count++;
     this._serviceLogin.login(persona);
+  }
 
+  contar(){
+    this.contador++;
+  }
+
+  restarDos($event:number){
+    this.contador = $event;
   }
 }

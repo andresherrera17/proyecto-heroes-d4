@@ -1,1 +1,6 @@
 <button class="btn btn-primary" (click)="login()">Login</button>
+<button class="btn btn-danger" (click)="contar()">Contar</button>
+<h1>Contador Padre</h1>
+<h3>{{ contador }}</h3>
+
+<app-hijo [contadorHijo]="contador" (restar)="restarDos($event)"></app-hijo>
